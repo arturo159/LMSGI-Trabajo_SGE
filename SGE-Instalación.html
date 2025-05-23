@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="./css/SGE-Instalación.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <h1>Arturo Gordo SGE</h1>
+            <button class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </header>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="./SGE-Inicio.html">¿Qué es un SGE?</a></li>
+                <li><a href="./SGE-Instalación.html">Instalación</a></li>
+                <li><a href="./SGE-Admin.html">Administración y configuración</a></li>
+                <li><a href="./SGE-Informes.html">Elaboración de informes y exportación de información</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Instalación del SGE</h1>
+            <div class="video-container">
+                <video controls>
+                    <source src="./video/Instalación.mkv" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <p>&copy; 2025 Información sobre SGE</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            const menuButton = document.querySelector(".hamburger-menu");
+            const navMenu = document.querySelector(".nav-menu");
+
+            menuButton.addEventListener("click", () => {
+                navMenu.classList.toggle("show");
+            });
+        </script>
+    </body>
+</html>
